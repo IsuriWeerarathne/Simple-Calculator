@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="main-wrap">
+    <div class="calculator-wrap">
+        <div class="top-bar-wrap">
+            <input id="text" type="number" class="form-control">
+        </div>
+        <div class="button-wrap">
+            <table>
+                <tr>
+                    <td>
+                        <button onclick="setText(1);">1</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(2);">2</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(3);">3</button>
+                    </td>
+                    <td>
+                        <button onclick="sum();"
+                                style="background-color: #16a085"
+                        >+
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setText(4);">4</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(5);">5</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(6);">6</button>
+                    </td>
+                    <td>
+                        <button onclick="sub();"
+                                style="background-color: #16a085">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setText(7);">7</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(8);">8</button>
+                    </td>
+                    <td>
+                        <button onclick="setText(9);">9</button>
+                    </td>
+                    <td>
+                        <button onclick="mul();" style="background-color: #16a085">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setText(0);">0</button>
+                    </td>
+                    <td colspan="2">
+                        <button style="width: 100px; background-color: #2980b9" onclick="answer()">=</button>
+                    </td>
+                    <td>
+                        <button onclick="dev();" style="background-color: #16a085">/</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <marquee direction="row">
+            Simple Calculator
+        </marquee>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
